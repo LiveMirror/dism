@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DismGui", "DismGui\DismGui.vbproj", "{5FC03769-8AD7-4123-AE87-43D39FA51203}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FC03769-8AD7-4123-AE87-43D39FA51203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC03769-8AD7-4123-AE87-43D39FA51203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC03769-8AD7-4123-AE87-43D39FA51203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC03769-8AD7-4123-AE87-43D39FA51203}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

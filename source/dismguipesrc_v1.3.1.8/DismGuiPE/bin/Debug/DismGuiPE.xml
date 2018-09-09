@@ -1,0 +1,2748 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DismGuiPE
+</name>
+</assembly>
+<members>
+<member name="P:DismGuiPE.DismPanelElement.TaskButton">
+	<summary>
+ 获取或者设置单元按钮
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismPanelElement.Panel">
+	<summary>
+ 获取或者设置Dism面板控件
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismPanelElement.DefaultUpdateInfo">
+	<summary>
+ 获取或者设置默认映像信息标识
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismPanelElement.Name">
+	<summary>
+ 获取或者设置单元名称
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismPanelElement.Text">
+	<summary>
+ 获取或者设置单元文本
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismPanelElement.Create(System.String,DismGuiPE.WimInfoDetail,System.String,DismGuiPE.IDismControl)">
+	<summary>
+ 创建Dism面板管理单元
+ </summary>
+	<param name="Name">单元名称</param>
+	<param name="DefaultUpdateInfo">默认映像信息</param>
+	<param name="Text">单元文本</param>
+	<param name="Panel">Dism面板控件</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DismPanelElement">
+	<summary>
+ 表示用于管理Dism面板的基础单元
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.PanelESD.DecryptOnlyProc(DismGuiPE.PanelESD.EsdAsyncObject)">
+	<summary>
+ 只解密 .ESD 文件.
+ </summary>
+	<param name="p"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.PanelESD.EsdConvertProc(DismGuiPE.PanelESD.EsdAsyncObject)">
+	<summary>
+ 将 .ESD 文件的映像都转为 .WIM 映像
+ </summary>
+	<param name="p"></param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.MountedWimInfoComboBox.QuerySelectedItemDetailHandler">
+	<summary>
+ 定义查询子项信息列表的事件句柄
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="E:DismGuiPE.MountedWimInfoComboBox.SelectedItemChanged">
+	<summary>
+ 选择项已改变事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.MountedWimInfoComboBox.SelectedIndex">
+	<summary>
+ 获取或者设置选择项的索引
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.MountedWimInfoComboBox.ListSelectedItemDetail">
+	<summary>
+ 获取或者设置子项映像信息标识
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.MountedWimInfoComboBox.WithOnlineImage">
+	<summary>
+ 获取或者设置一个标识，指示在刷新挂载目录的时候是否添加本机映像。
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.MountedWimInfoComboBox.ReadOnly">
+	<summary>
+ 获取或者设置控件是否是只读模式
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.MountedWimInfoComboBox.ToolTipTitle">
+	<summary>
+ 获取或者设置控件提示标题
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.MountedWimInfoComboBox.MaxDropDownItems">
+	<summary>
+ 获取或者设置下拉列表最大项数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.MountedWimInfoComboBox.ItemHeightOffset">
+	<summary>
+ 获取或者设置项高度偏移
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.MountedWimInfoComboBox.Text">
+	<summary>
+ 获取或者设置选中项
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.UpdateMountedWimInfo">
+	<summary>
+ 更新已安装映像列表
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.UpdateMountedWimInfo(System.Boolean)">
+	<summary>
+ 更新已安装映像列表
+ </summary>
+	<param name="WithOnlineImage">是否包含在线映像</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.UpdateMountedWimInfo(System.Boolean,System.Boolean)">
+	<summary>
+ 更新已安装映像列表
+ </summary>
+	<param name="IsReadOnly">是否只读</param>
+	<param name="WithOnlineImage">是否包含在线映像</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.QueryMountedWimInfoProc">
+	<summary>
+ 查询已安装映像信息
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.ShowMountedWimInfoProc(System.Data.DataTable)">
+	<summary>
+ 现在已安装映像信息
+ </summary>
+	<param name="dt">查询到的数据</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.UpdateControlState(System.Boolean)">
+	<summary>
+ 更新控件可用状态
+ </summary>
+	<param name="IsEnabled"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox._UpdateControlState(System.Boolean)">
+	<summary>
+ 更新控件可用状态
+ </summary>
+	<param name="IsEnabled"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.UpdateSelectedItemDetail">
+	<summary>
+ 更新子项映像信息
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.MountedWimInfoComboBox_Load(System.Object,System.EventArgs)">
+	<summary>
+ 控件初始化
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.MountedWimInfoComboBox_Resize(System.Object,System.EventArgs)">
+	<summary>
+ 控件大小调整
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.BtnRefresh_Click(System.Object,System.EventArgs)">
+	<summary>
+ 刷新已安装映像列表
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.BtnBrowser_Click(System.Object,System.EventArgs)">
+	<summary>
+ 浏览指定的离线映像
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.MCB_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 已选映像项改变事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.QuerySelectedItemDetailProc(System.String)">
+	<summary>
+ 查询子项信息处理过程
+ </summary>
+	<param name="Image"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.OnSelectedItemChanged(DismGuiPE.MountedWimInfoComboBoxEventArgs)">
+	<summary>
+ 在通报已安装映像选择项改变之前，进行线程间通讯安全处理
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox._OnSelectedItemChanged(DismGuiPE.MountedWimInfoComboBoxEventArgs)">
+	<summary>
+ 通报已安装选择项已改变
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.UpdateMCBState(System.Boolean)">
+	<summary>
+ 更新已安装映像列表状态
+ </summary>
+	<param name="IsReadOnly">是否为只读</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBox.DrawItemProc(System.Object,System.Windows.Forms.DrawItemEventArgs)">
+	<summary>
+ 绘制控件下拉菜单
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.MountedWimInfoComboBox">
+	<summary>
+ 已安装映像列表控件
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DismShellDataObject">
+	<summary>
+ 表示Dism的数据对象,用于附加到进程Process对象.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_RETURNONLYFSDIRS">
+	<summary>
+ Only return file system directories. 
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_DONTGOBELOWDOMAIN">
+	<summary>
+ Do not include network folders below the domain level in the dialog box's tree view control.
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_STATUSTEXT">
+	<summary>
+ Include a status area in the dialog box. 
+ The callback function can set the status text by sending messages to the dialog box. 
+ This flag is not supported when <bold>BIF_NEWDIALOGSTYLE</bold> is specified
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_RETURNFSANCESTORS">
+	<summary>
+ Only return file system ancestors. 
+ An ancestor is a subfolder that is beneath the root folder in the namespace hierarchy. 
+ If the user selects an ancestor of the root folder that is not part of the file system, the OK button is grayed
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_EDITBOX">
+	<summary>
+ Include an edit control in the browse dialog box that allows the user to type the name of an item.
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_VALIDATE">
+	<summary>
+ If the user types an invalid name into the edit box, the browse dialog box calls the application's BrowseCallbackProc with the BFFM_VALIDATEFAILED message. 
+ This flag is ignored if <bold>BIF_EDITBOX</bold> is not specified.
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_NEWDIALOGSTYLE">
+	<summary>
+ Use the new user interface. 
+ Setting this flag provides the user with a larger dialog box that can be resized. 
+ The dialog box has several new capabilities, including: drag-and-drop capability within the 
+ dialog box, reordering, shortcut menus, new folders, delete, and other shortcut menu commands. 
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_BROWSEINCLUDEURLS">
+	<summary>
+ The browse dialog box can display URLs. The <bold>BIF_USENEWUI</bold> and <bold>BIF_BROWSEINCLUDEFILES</bold> flags must also be set. 
+ If any of these three flags are not set, the browser dialog box rejects URLs.
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_USENEWUI">
+	<summary>
+ Use the new user interface, including an edit box. This flag is equivalent to <bold>BIF_EDITBOX | BIF_NEWDIALOGSTYLE</bold>
+	</summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_UAHINT">
+	<summary>
+ hen combined with <bold>BIF_NEWDIALOGSTYLE</bold>, adds a usage hint to the dialog box, in place of the edit box. <bold>BIF_EDITBOX</bold> overrides this flag.
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_NONEWFOLDERBUTTON">
+	<summary>
+ Do not include the New Folder button in the browse dialog box.
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_NOTRANSLATETARGETS">
+	<summary>
+ When the selected item is a shortcut, return the PIDL of the shortcut itself rather than its target.
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_BROWSEFORCOMPUTER">
+	<summary>
+ Only return computers. If the user selects anything other than a computer, the OK button is grayed.
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_BROWSEFORPRINTER">
+	<summary>
+ Only allow the selection of printers. If the user selects anything other than a printer, the OK button is grayed
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_BROWSEINCLUDEFILES">
+	<summary>
+ The browse dialog box displays files as well as folders.
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_SHAREABLE">
+	<summary>
+ The browse dialog box can display shareable resources on remote systems.
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.BrowseInfoFlags.BIF_BROWSEFILEJUNCTIONS">
+	<summary>
+ Allow folder junctions such as a library or a compressed file with a .zip file name extension to be browsed.
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.OpenFileNameFlags.OFN_NOLONGNAMES">
+	<summary>
+ Force no long names for 4.x modules
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.OpenFileNameFlags.OFN_EXPLORER">
+	<summary>
+ New look commdlg
+ </summary>
+</member><member name="F:DismGuiPE.Shell32.OpenFileNameFlags.OFN_LONGNAMES">
+	<summary>
+ Force long names for 3.x modules
+ </summary>
+</member><member name="P:DismGuiPE.ExclusionEditor.StartPath">
+	<summary>
+ 获取或者设置指定的文件夹路径
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.ExclusionEditor.ExclusionList">
+	<summary>
+ 获取或者设置排除列表
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.ExclusionEditor_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初始化排除列表编辑对话框
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.LoadExclusionList">
+	<summary>
+ 加载所有排除列表
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.LoadNormalList">
+	<summary>
+ 加载排除列表
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.LoadExceptionList">
+	<summary>
+ 加载代替默认排除列表
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.LoadCompressList">
+	<summary>
+ 加载压缩时排除列表
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.LoadTreeView(System.String)">
+	<summary>
+ 加载目录树根节点
+ </summary>
+	<param name="StartPath">指定的文件夹路径</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.FillNode(System.Windows.Forms.TreeNode,System.String)">
+	<summary>
+ 根据节点在目录树的路径，填充其所有子节点。
+ </summary>
+	<param name="Node">节点</param>
+	<param name="StartPath">指定的文件夹路径</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.GetNodePath(System.Windows.Forms.TreeNode,System.String)">
+	<summary>
+ 获取目录树节点路径
+ </summary>
+	<param name="Node">节点</param>
+	<param name="StartPath">指定的文件夹路径</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.TVDirectory_BeforeSelect(System.Object,System.Windows.Forms.TreeViewCancelEventArgs)">
+	<summary>
+ 在选择目录树一个项之前，填充所有子节点和其子节点
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.GetDirectories(System.String)">
+	<summary>
+ 获取指定路径的文件夹列表
+ </summary>
+	<param name="StartPath">指定的文件夹路径</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.GetFiles(System.String)">
+	<summary>
+ 获取指定路径的文件列表
+ </summary>
+	<param name="StartPath">指定的文件夹路径</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.BtnExclusionAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ 添加一个排除列表项
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.BtnExclusionRemove_Click(System.Object,System.EventArgs)">
+	<summary>
+ 删除一个排除列表项
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.BtnExclusionClear_Click(System.Object,System.EventArgs)">
+	<summary>
+ 清除所有排除列表项
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.BtnExclusionAddExt_Click(System.Object,System.EventArgs)">
+	<summary>
+ 添加一个自定义的排除列表项
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.BtnExceptionAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ 添加一个代替默认列表项
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.BtnExceptionRemove_Click(System.Object,System.EventArgs)">
+	<summary>
+ 删除一个代替默认排除列表项
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.BtnExceptionClear_Click(System.Object,System.EventArgs)">
+	<summary>
+ 清除所有代替默认排除列表项
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.BtnExceptionAddExt_Click(System.Object,System.EventArgs)">
+	<summary>
+ 添加一个自定义的代替默认排除列表项
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.BtnCompressAdd_Click(System.Object,System.EventArgs)">
+	<summary>
+ 添加一个压缩时的排除项
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.BtnCompressRemove_Click(System.Object,System.EventArgs)">
+	<summary>
+ 删除一个压缩时的排除项
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.BtnCompressClear_Click(System.Object,System.EventArgs)">
+	<summary>
+ 清除所有压缩时的排除项
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.BtnCompressAddExt_Click(System.Object,System.EventArgs)">
+	<summary>
+ 添加一个自定义的压缩时的排除项
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.ExclusionEditor.BtnOK_Click(System.Object,System.EventArgs)">
+	<summary>
+ 点击确定关闭对话框
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.ExclusionEditor">
+	<summary>
+ 排除列表编辑对话框
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismConfig.Count">
+	<summary>
+ 获取配置个数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismConfig.ReLoad">
+	<summary>
+ 重新载入配置文件
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismConfig.Save">
+	<summary>
+ 将配置保存到文件中
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismConfig.Clear">
+	<summary>
+ 清除所有配置
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismConfig.GetItem(System.String)">
+	<summary>
+ 获取配置值
+ </summary>
+	<param name="Name">名称</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismConfig.GetItem(System.String,System.Object)">
+	<summary>
+ 获取配置值
+ </summary>
+	<param name="Name">名称</param>
+	<param name="Default">默认值</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismConfig.SetItem(System.String,System.Object)">
+	<summary>
+ 设置配置值
+ </summary>
+	<param name="Name">名称</param>
+	<param name="Value">值</param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DismConfig">
+	<summary>
+ 配置文件类
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.FileOrFolderBrowserStyle.Folder">
+	<summary>
+ 文件夹
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.FileOrFolderBrowserStyle.FileOpen">
+	<summary>
+ 打开文件
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.FileOrFolderBrowserStyle.FileSave">
+	<summary>
+ 保存文件
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.FileOrFolderBrowserStyle.FileOrFolderOpen">
+	<summary>
+ 打开文件或者文件夹
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.FileOrFolderBrowserStyle.FileOrFolderSave">
+	<summary>
+ 保存文件或者文件夹
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.FileOrFolderBrowserStyle">
+	<summary>
+ 表示FileOrFolder浏览目标
+ </summary>
+	<remarks></remarks>
+</member><member name="E:DismGuiPE.FileOrFolderSelector.FileOrFolderSelected">
+	<summary>
+ 文件或文件夹已经选定事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.FileOrFolderSelector.BrowserStyle">
+	<summary>
+ 获取或者设置浏览目标
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.FileOrFolderSelector.Font">
+	<summary>
+ 获取或者设置控件字体
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.FileOrFolderSelector.Text">
+	<summary>
+ 获取或者设置文件或者文件夹路径
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.FileOrFolderSelector.ReadOnly">
+	<summary>
+ 获取或者设置一个标识，指示输入框是否为只读。
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.FileOrFolderSelector.Filter">
+	<summary>
+ 获取或设置当前文件名筛选器字符串，该字符串决定对话框的“另存为文件类型”或“文件类型”框中出现的选择内容。
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.FileOrFolderSelector.CheckFileExists">
+	<summary>
+ 获取或设置一个值，该值指示如果用户指定不存在的文件名，对话框是否显示警告。
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.FileOrFolderSelector.Multiselect">
+	<summary>
+ 获取或设置一个值，该值指示对话框是否允许选择多个文件。
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.FileOrFolderSelector.CheckPathExists">
+	<summary>
+ 获取或设置一个值，该值指示如果用户指定不存在的路径，对话框是否显示警告。
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.FileOrFolderSelector.OverwritePrompt">
+	<summary>
+ 获取或设置一个值，该值指示如果用户指定的文件名已存在，Save As 对话框是否显示警告。
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.FileOrFolderSelector.ShowDialog">
+	<summary>
+ 显示浏览对话框
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.FileOrFolderSelector.BtnBrowser_Click(System.Object,System.EventArgs)">
+	<summary>
+ 浏览按钮点击事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.FileOrFolderSelector.ShowFolderSelect(System.EventArgs)">
+	<summary>
+ 显示选择文件夹对话框
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.FileOrFolderSelector.ShowFileOpen(System.EventArgs)">
+	<summary>
+ 显示打开文件对话框
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.FileOrFolderSelector.ShowFileSave(System.EventArgs)">
+	<summary>
+ 显示保存文件对话框
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.FileOrFolderSelector.Parent_Resize(System.Object,System.EventArgs)">
+	<summary>
+ 控件大小调整事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.FileOrFolderSelector.CM_FileDialog_Click(System.Object,System.EventArgs)">
+	<summary>
+ 弹出菜单 文件 点击事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.FileOrFolderSelector.CM_FolderDialog_Click(System.Object,System.EventArgs)">
+	<summary>
+ 弹出对话框 文件夹 点击事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.FileOrFolderSelector">
+	<summary>
+ 文件或文件夹选择器
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.UpdateProgressEventArgs.Current">
+	<summary>
+ 获取或者设置已完成数量
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.UpdateProgressEventArgs.Total">
+	<summary>
+ 获取或者设置总数量
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.UpdateProgressEventArgs.IsCompleted">
+	<summary>
+ 获取或者设置一个标识，指示Dism面板控件是否处于繁忙状态
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.UpdateProgressEventArgs.#ctor">
+	<summary>
+ 创建通报处理进度事件数据对象
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.UpdateProgressEventArgs.#ctor(System.Boolean)">
+	<summary>
+ 创建通报处理进度事件数据对象
+ </summary>
+	<param name="IsCompleted">事件是否完成</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.UpdateProgressEventArgs.#ctor(System.Int64)">
+	<summary>
+ 创建通报处理进度事件数据对象
+ </summary>
+	<param name="Current">已完成数量</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.UpdateProgressEventArgs.#ctor(System.Int64,System.Int64)">
+	<summary>
+ 创建通报处理进度事件数据对象
+ </summary>
+	<param name="Current">已完成数量</param>
+	<param name="Total">总数量</param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.UpdateProgressEventArgs">
+	<summary>
+ 表示通报处理进度事件数据
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.UpdateProgressEventHandler">
+	<summary>
+ 定义通报处理进度事件的句柄
+ </summary>
+	<param name="sender">Dism面板控件</param>
+	<param name="e">通报处理进度事件数据</param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DismAsyncObject">
+	<summary>
+ 表示异步操作数据对象
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MSProductKeyBox.#ctor">
+	<summary>
+ 创建微软序列号文本控件
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MSProductKeyBox.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ 重写按键事件
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MSProductKeyBox.WndProc(System.Windows.Forms.Message@)">
+	<summary>
+ 拦截消息
+ </summary>
+	<param name="m"></param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.MSProductKeyBox">
+	<summary>
+ 微软序列号文本控件，继承于TextBox。
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileAccess.Read">
+	<summary>
+ 只读
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileAccess.Write">
+	<summary>
+ 读写
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileAccess.Mount">
+	<summary>
+ 映像可被WIMMountImageHandle挂载
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.WIMGAPI.FileAccess">
+	<summary>
+ 访问文件的方式
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileMode.CreateNew">
+	<summary>
+ 创建一个新的文件.若文件已经存在,则调用失败.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileMode.CreateAlways">
+	<summary>
+ 创建一个新的文件.若文件已经存在,则会覆盖该文件.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileMode.OpenExisting">
+	<summary>
+ 打开一个文件.若文件不存在,则调用失败.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileMode.OpenAlways">
+	<summary>
+ 打开一个文件.若文件不存在,则创建它.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.WIMGAPI.FileMode">
+	<summary>
+ 打开文件的方式
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileCompress.None">
+	<summary>
+ 不压缩
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileCompress.Xpress">
+	<summary>
+ 快速
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileCompress.LZX">
+	<summary>
+ 最大压缩
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileCompress.LZMS">
+	<summary>
+ 这个要问微软:)
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.WIMGAPI.FileCompress">
+	<summary>
+ 压缩方式
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.CreationResult.CreatedNew">
+	<summary>
+ 新建
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.CreationResult.OpenedExisting">
+	<summary>
+ 打开已存在的
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.WIMGAPI.CreationResult">
+	<summary>
+ 表示文件是通过哪种方式打开的
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileFlags.Reserved">
+	<summary>
+ 保留.千万别使用这个!
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileFlags.Verify">
+	<summary>
+ 生成新文件的数据完整性的信息,验证并更新现有的文件.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileFlags.Index">
+	<summary>
+ 指定该映像将被顺序地读出用于高速缓存或提高性能的目的
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileFlags.NoApply">
+	<summary>
+ 应用映像但不实际创建目录或文件,可用于获取映像中的文件和目录的列表.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileFlags.NoDiracl">
+	<summary>
+ 禁止恢复目录的安全信息.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileFlags.NoFileacl">
+	<summary>
+ 禁止恢复文件的安全信息
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileFlags.ShareWrite">
+	<summary>
+ 打开文件为可同时读取和写入模式.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileFlags.FileInfo">
+	<summary>
+ 应用映像操作过程中发送一个WIM_MSG_FILEINFO消息
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileFlags.NoRPFix">
+	<summary>
+ 禁止自动修正边界和特征链接.
+ 原文:Disables automatic path fixups for junctions and symbolic links.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileFlags.MountReadOnly">
+	<summary>
+ 以只读的方式装载映像.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileFlags.MountFast">
+	<summary>
+ 快速装载映像.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileFlags.MountLegacy">
+	<summary>
+ 以上一个老版本的方式装载映像.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.FileFlags.ApplyCIEA">
+	<summary>
+ 这个请问微软:)
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.WIMGAPI.FileFlags">
+	<summary>
+ 文件标志
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.Message.WIM_MSG_PROGRESS">
+	<summary>
+ 表示应用一个映像的进度。
+Indicates an update in the progress of an image application.
+</summary>
+</member><member name="F:DismGuiPE.WIMGAPI.Message.WIM_MSG_PROCESS">
+	<summary>
+让调用者能够防止在捕获或者应用一个文件或者目录时访问该文件或者目录.
+Enables the caller to prevent a file or a directory from being captured or applied.
+</summary>
+</member><member name="F:DismGuiPE.WIMGAPI.Message.WIM_MSG_SCANNING">
+	<summary>
+ 表示在捕获映像的时候收集该卷的信息
+Indicates that volume information is being gathered during an image capture.
+</summary>
+</member><member name="F:DismGuiPE.WIMGAPI.Message.WIM_MSG_SETRANGE">
+	<summary>
+ 表示捕获或者应用映像的文件数
+Indicates the number of files that will be captured or applied.
+</summary>
+</member><member name="F:DismGuiPE.WIMGAPI.Message.WIM_MSG_SETPOS">
+	<summary>
+ 表示已经捕获或者应用的文件数
+Indicates the number of files that have been captured or applied.
+</summary>
+</member><member name="F:DismGuiPE.WIMGAPI.Message.WIM_MSG_STEPIT">
+	<summary>
+ 表示该文件不被捕获或者应用
+Indicates that a file has been either captured or applied.
+</summary>
+</member><member name="F:DismGuiPE.WIMGAPI.Message.WIM_MSG_COMPRESS">
+	<summary>
+ 让调用者能够防止在捕获一个文件资源时压缩该文件资源.
+Enables the caller to prevent a file resource from being compressed during a capture.
+</summary>
+</member><member name="F:DismGuiPE.WIMGAPI.Message.WIM_MSG_ERROR">
+	<summary>
+ 警告调用者：在捕获或者应用映像的时候
+Alerts the caller that an error has occurred while capturing or applying an image.
+</summary>
+</member><member name="F:DismGuiPE.WIMGAPI.Message.WIM_MSG_ALIGNMENT">
+	<summary>
+ 让调用者能够在特定的边界对齐文件
+Enables the caller to align a file resource on a particular alignment boundary.
+</summary>
+</member><member name="T:DismGuiPE.WIMGAPI.Message">
+	<summary>
+映像消息
+</summary>
+</member><member name="E:DismGuiPE.WimFileSelector.FileSelected">
+	<summary>
+ 已选定文件事件
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimFileSelector.Font">
+	<summary>
+ 获取或者设置控件字体
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimFileSelector.Text">
+	<summary>
+ 获取或者设置关联文本
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimFileSelector.ShowAsSaveFileDialog">
+	<summary>
+ 获取或者设置一个标识，指示是否显示为保存文件对话框。
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimFileSelector.WimInfoControl">
+	<summary>
+ 获取或者设置 .WIM 文件信息控件
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimFileSelector.BtnBrowser_Click(System.Object,System.EventArgs)">
+	<summary>
+ 浏览 .WIM 文件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimFileSelector.ShowFileSave(System.EventArgs)">
+	<summary>
+ 显示保存文件对话框
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimFileSelector.ShowFileOpen(System.EventArgs)">
+	<summary>
+ 显示打开文件对话框
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimFileSelector.WimFileSelector_Resize(System.Object,System.EventArgs)">
+	<summary>
+ 调整控件大小
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.WimFileSelector">
+	<summary>
+ .WIM 文件选择控件
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.Main.DismQueue">
+	<summary>
+ Dism任务队列管理器
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.Main_Load(System.Object,System.EventArgs)">
+	<summary>
+ 窗体初始化
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.AddComponent">
+	<summary>
+ 添加所有Dism面板控件
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.AddPanel(System.String,DismGuiPE.WimInfoDetail,System.String,DismGuiPE.IDismControl)">
+	<summary>
+ 添加一个Dism面板控件，并且添加事件处理
+ </summary>
+	<param name="Name">控件名称</param>
+	<param name="DefaultUpdateInfo">默认更新映像信息</param>
+	<param name="Text">任务栏显示标题</param>
+	<param name="Panel">Dism面板控件</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.TaskButtonLayout">
+	<summary>
+ 对任务按钮进行UI布局调整
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.HookDismControlEvent(DismGuiPE.DismPanelElement)">
+	<summary>
+ 添加Dism面板控件事件处理
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.UnHookDismControlEvent(DismGuiPE.DismPanelElement)">
+	<summary>
+ 移除Dism面板控件事件处理
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.RB_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 当任务按钮改变后，显示对应画面
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.DismExecuteProc(DismGuiPE.IDismControl,DismGuiPE.DismControlEventArgs)">
+	<summary>
+ Dism面板控件执行指令事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.DismPanelProgressProc(DismGuiPE.IDismControl,DismGuiPE.UpdateProgressEventArgs)">
+	<summary>
+ 通报处理进度，在此主要是用于锁定任务按钮和操作面板，以免重复操作。
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.UpdateControlState(System.Boolean)">
+	<summary>
+ 更新画面是否可操作
+ </summary>
+	<param name="IsEnabled"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main._UpdateControlState(System.Boolean)">
+	<summary>
+ 更新画面是否可操作
+ </summary>
+	<param name="IsEnabled"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.RunQueueMissionProc(DismGuiPE.IDismControl)">
+	<summary>
+ 执行所有任务队列
+ </summary>
+	<param name="sender">Dism面板控件，一般都是PanelQueue对象。</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.RunSingleMissionProc(DismGuiPE.DismAsyncObject)">
+	<summary>
+ 执行单个任务
+ </summary>
+	<param name="DataObject"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.RunWithWindow(DismGuiPE.DismAsyncObject,System.Boolean)">
+	<summary>
+ 创建带窗口的Dism处理进程
+ </summary>
+	<param name="DataObject">数据对象</param>
+	<param name="ToUpdateSourceControl">是否需要更新源Dism面板的信息。可选项，默认为 True。</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.RunWithNoWindow(DismGuiPE.DismAsyncObject,System.Boolean)">
+	<summary>
+ 创建不带窗口的Dism处理进程
+ </summary>
+	<param name="DataObject">数据对象</param>
+	<param name="ToUpdateSourceControl">是否需要更新源Dism面板的信息。可选项，默认为 True。</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.DismProcess_OutputDataReceived(System.Object,System.Diagnostics.DataReceivedEventArgs)">
+	<summary>
+ 拦截信息时的输出事件（不带窗口的Dism进程）
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.UpdateProgressBar(System.Int32)">
+	<summary>
+ 更新进度条
+ </summary>
+	<param name="Value">进度</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main._SetProgressBar(System.Object,System.EventArgs)">
+	<summary>
+ 更新进度条
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.ChkScratchDirActived_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 启用暂存目录选择变化事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.BtnScratchDirDefault_Click(System.Object,System.EventArgs)">
+	<summary>
+ 设置默认暂存目录
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.FSScratchDir_FolderSelected(System.Object,System.EventArgs)">
+	<summary>
+ 暂存目录已选择。
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.ShowDriveInfo">
+	<summary>
+ 显示暂存目录所在驱动器的信息
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.GetFolderDriveInfo(System.String)">
+	<summary>
+ 根据文件夹获取驱动器信息
+ </summary>
+	<param name="Path">文件夹路径</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.GetSizeDescritpion(System.UInt64)">
+	<summary>
+ 获取空间大小的带单位描述。
+ </summary>
+	<param name="Value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.AddMsg(System.String)">
+	<summary>
+ 显示指定的信息，线程间安全。
+ </summary>
+	<param name="Msg">信息</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main._SetMsgProc(System.Object,System.EventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.Main.BtnClear_Click(System.Object,System.EventArgs)">
+	<summary>
+ 清除所有显示的信息
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.Main">
+	<summary>
+ 主界面
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.WIMKits.MAX_PATH">
+	<summary>
+ 最大路径Unicode编码字符数
+ </summary>
+	<remarks></remarks>
+</member><member name="E:DismGuiPE.IDismControl.UpdateProgress">
+	<summary>
+ 通报处理进度事件
+ </summary>
+	<remarks></remarks>
+</member><member name="E:DismGuiPE.IDismControl.Execute">
+	<summary>
+ 执行指令事件
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.IDismControl.UpdateInfo(DismGuiPE.WimInfoDetail)">
+	<summary>
+ 更新信息
+ </summary>
+	<param name="Flags">信息标识</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.IDismControl.UpdateControlState(System.Boolean)">
+	<summary>
+ 更新控件是否可用
+ </summary>
+	<param name="IsEnabled"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.IDismControl.LoadConfig">
+	<summary>
+ 加载设置
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.IDismControl.Name">
+	<summary>
+ 获取或者设置控件名称
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.IDismControl.Dock">
+	<summary>
+ 获取或者设置控件停靠的位置和方式
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.IDismControl.Title">
+	<summary>
+ 获取或者设置提示对话框的标题
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.IDismControl">
+	<summary>
+ Dism面板控件必须实现的接口
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismException.ExitCode">
+	<summary>
+  获取或者设置退出代码
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismException.Exception">
+	<summary>
+ 获取或者设置异常信息对象
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismException.#ctor">
+	<summary>
+ 创建在执行DismShell中的函数时出现的异常信息对象
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismException.#ctor(System.Int32)">
+	<summary>
+ 创建在执行DismShell中的函数时出现的异常信息对象
+ </summary>
+	<param name="ExitCode">退出代码</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismException.#ctor(System.Int32,System.Exception)">
+	<summary>
+ 创建在执行DismShell中的函数时出现的异常信息对象
+ </summary>
+	<param name="ExitCode">退出代码</param>
+	<param name="Exception">错误信息对象</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismException.#ctor(System.Int32,System.String)">
+	<summary>
+ 创建在执行DismShell中的函数时出现的异常信息对象
+ </summary>
+	<param name="ExitCode">退出代码</param>
+	<param name="Message">错误信息</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismException.#ctor(System.Int32,System.String,System.String)">
+	<summary>
+ 创建在执行DismShell中的函数时出现的异常信息对象
+ </summary>
+	<param name="ExitCode">退出代码</param>
+	<param name="Message">错误信息</param>
+	<param name="paramName">参数名称</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismException.ToString">
+	<summary>
+ 将错误信息转化为字符串
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismException.Message">
+	<summary>
+ 获取错误信息
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismException.op_Inequality(DismGuiPE.DismException,System.Int32)">
+	<summary>
+ 定义不等于操作符
+ </summary>
+	<param name="Left">Dism错误对象</param>
+	<param name="Right">退出代码</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismException.op_Equality(DismGuiPE.DismException,System.Int32)">
+	<summary>
+ 定义等于操作符
+ </summary>
+	<param name="Left">Dism错误对象</param>
+	<param name="Right">错误代码</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DismException">
+	<summary>
+ 表示在执行DismShell中的函数时出现的异常信息
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismExclusionList.ExclusionItemType.Normal">
+	<summary>
+ 要排除的文件和文件夹
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismExclusionList.ExclusionItemType.Exception">
+	<summary>
+ 替代默认排除列表
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismExclusionList.ExclusionItemType.Compress">
+	<summary>
+ 启用压缩参数时排除的特定文件和文件夹（也可以指定文件类型）
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DismExclusionList.ExclusionItemType">
+	<summary>
+ 排除项类型
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismExclusionList.#ctor">
+	<summary>
+ 创建捕获映像时的排除列表对象
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismExclusionList.IsEmpty">
+	<summary>
+ 获取一个标识，指示排除项列表是否为空.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismExclusionList.FileName">
+	<summary>
+ 获取排除列表文件路径
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismExclusionList.Items(DismGuiPE.DismExclusionList.ExclusionItemType)">
+	<summary>
+ 获取排除列表项
+ </summary>
+	<param name="et">排除列表类型</param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismExclusionList.Add(DismGuiPE.DismExclusionList.ExclusionItemType,System.String)">
+	<summary>
+ 添加排除项
+ </summary>
+	<param name="et">排除列表类型</param>
+	<param name="Exclusion">排除路径、相对路径或文件类型</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismExclusionList.Remove(DismGuiPE.DismExclusionList.ExclusionItemType,System.String)">
+	<summary>
+ 删除排除项
+ </summary>
+	<param name="et">排除列表类型</param>
+	<param name="Exclusion">排除路径、相对路径或文件类型</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismExclusionList.RemoveAt(DismGuiPE.DismExclusionList.ExclusionItemType,System.Int32)">
+	<summary>
+ 删除排除项
+ </summary>
+	<param name="et">排除列表类型</param>
+	<param name="Index">索引</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismExclusionList.Clear(DismGuiPE.DismExclusionList.ExclusionItemType)">
+	<summary>
+ 清除排除项
+ </summary>
+	<param name="et">排除列表类型</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismExclusionList.Clear">
+	<summary>
+ 清除排除项
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismExclusionList.FindIndex(DismGuiPE.DismExclusionList.ExclusionItemType,System.String)">
+	<summary>
+ 查找排除项
+ </summary>
+	<param name="et">排除列表类型</param>
+	<param name="Exclusion">排除路径、相对路径或文件类型</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismExclusionList.SaveToFile">
+	<summary>
+ 将排除列表写入文件
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismExclusionList.LoadFromFile">
+	<summary>
+ 从文件加载排除列表
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismExclusionList.Finalize">
+	<summary>
+ 释放资源
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DismExclusionList">
+	<summary>
+ 表示捕获映像时的排除列表
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.My.Resources.Resources.ResourceManager">
+	<summary>
+  返回此类使用的缓存的 ResourceManager 实例。
+</summary>
+</member><member name="P:DismGuiPE.My.Resources.Resources.Culture">
+	<summary>
+  使用此强类型资源类，为所有资源查找
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member><member name="P:DismGuiPE.My.Resources.Resources.app">
+	<summary>
+  查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+</summary>
+</member><member name="P:DismGuiPE.My.Resources.Resources.Refresh">
+	<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member><member name="P:DismGuiPE.My.Resources.Resources.ToEnd">
+	<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member><member name="P:DismGuiPE.My.Resources.Resources.ToFirst">
+	<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member><member name="P:DismGuiPE.My.Resources.Resources.ToNext">
+	<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member><member name="P:DismGuiPE.My.Resources.Resources.ToPrev">
+	<summary>
+  查找 System.Drawing.Bitmap 类型的本地化资源。
+</summary>
+</member><member name="T:DismGuiPE.My.Resources.Resources">
+	<summary>
+  一个强类型的资源类，用于查找本地化的字符串等。
+</summary>
+</member><member name="M:DismGuiPE.DismQueueManager.Swap(System.Int32,System.Int32)">
+	<summary>
+ 交换队列位置
+ </summary>
+	<param name="Dest">目标索引</param>
+	<param name="Src">源索引</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismQueueManager.MoveToTop(System.Int32)">
+	<summary>
+ 将指定项移至任务队列首位
+ </summary>
+	<param name="Index">索引</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismQueueManager.MoveToBottom(System.Int32)">
+	<summary>
+ 将指定项移至任务队列的末端
+ </summary>
+	<param name="Index">索引</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismQueueManager.FillDataGridView(System.Windows.Forms.DataGridView)">
+	<summary>
+ 将队列填充到DataGridView控件之中
+ </summary>
+	<param name="DG">DataGridView控件</param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DismQueueManager">
+	<summary>
+ 表示任务队列管理器
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.X64.DllName">
+	<summary>
+ 动态链接库相对位置
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WIMGAPI.X64.WIMRemountImage(System.String,System.UInt32)">
+	<summary>
+ 重新挂载映像
+ </summary>
+	<param name="MountPath">挂载路径</param>
+	<param name="dwFlags">保留!一直为0.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WIMGAPI.X64.WIMUnmountImageHandle(System.IntPtr,System.Int32)">
+	<summary>
+ 卸载映像
+ </summary>
+	<param name="hImage">映像句柄</param>
+	<param name="dwUnmountFlags">保留!总是为0.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.WIMGAPI.X64">
+	<summary>
+ WIMGAPI
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WIMGAPI.X86.DllName">
+	<summary>
+ 动态链接库相对位置
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WIMGAPI.X86.WIMRemountImage(System.String,System.UInt32)">
+	<summary>
+ 重新挂载映像
+ </summary>
+	<param name="MountPath">挂载路径</param>
+	<param name="dwFlags">保留!一直为0.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WIMGAPI.X86.WIMUnmountImageHandle(System.IntPtr,System.Int32)">
+	<summary>
+ 卸载映像
+ </summary>
+	<param name="hImage">映像句柄</param>
+	<param name="dwUnmountFlags">保留!总是为0.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.WIMGAPI.X86">
+	<summary>
+ WIMGAPI
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismControlEventArgs.Arguments">
+	<summary>
+ 获取或者设置DISM的参数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismControlEventArgs.Mission">
+	<summary>
+ 获取或者设置任务标识
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismControlEventArgs.Description">
+	<summary>
+ 获取或者设置任务描述
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismControlEventArgs.Message">
+	<summary>
+ 获取或者设置附加信息
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismControlEventArgs.HookMessage">
+	<summary>
+ 获取或者设置一个标识，指示是否拦截消息
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismControlEventArgs.PushToQueue">
+	<summary>
+ 获取或者设置一个标识，指示是否将任务添加到任务队列
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismControlEventArgs.Date">
+	<summary>
+ 获取或者设置创建任务的时间
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismControlEventArgs.#ctor">
+	<summary>
+ 创建Dism面板控件事件数据对象
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismControlEventArgs.#ctor(System.String)">
+	<summary>
+ 创建Dism面板控件事件数据对象
+ </summary>
+	<param name="Arguments">执行参数</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismControlEventArgs.#ctor(System.String,DismGuiPE.DismMissionFlags)">
+	<summary>
+ 创建Dism面板控件事件数据对象
+ </summary>
+	<param name="Arguments">执行参数</param>
+	<param name="Mission">任务标识</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismControlEventArgs.#ctor(System.String,DismGuiPE.DismMissionFlags,System.String)">
+	<summary>
+ 创建Dism面板控件事件数据对象
+ </summary>
+	<param name="Arguments">执行参数</param>
+	<param name="Mission">任务标识</param>
+	<param name="Description">任务描述</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismControlEventArgs.#ctor(System.String,DismGuiPE.DismMissionFlags,System.String,System.Int32)">
+	<summary>
+ 创建Dism面板控件事件数据对象
+ </summary>
+	<param name="Arguments">执行参数</param>
+	<param name="Mission">任务标识</param>
+	<param name="Description">任务描述</param>
+	<param name="HookMessage">是否拦截消息</param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DismControlEventArgs">
+	<summary>
+ 表示Dism面板控件事件数据
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.None">
+	<summary>
+ 无
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.MountImage">
+	<summary>
+ 从 WIM 文件中装载映像
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.CommitImage">
+	<summary>
+ 更新映像，但不卸载。
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.ApplyImage">
+	<summary>
+ 应用一个映像
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.UnmountImage">
+	<summary>
+ 卸载已安装 WIM 映像
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.CaptureImage">
+	<summary>
+ 将指定目录的映像捕获到新的 WIM 文件中
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.CaptureCustomImage">
+	<summary>
+ 捕获 WIMBoot 映像自定义配置文件
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.AppendImage">
+	<summary>
+ 将指定目录的映像添加到 WIM 文件中
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.ExportImage">
+	<summary>
+ 将指定映像的副本导出到其他文件
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.SplitImage">
+	<summary>
+ 将现有 .wim 文件拆分为多个只读 WIM (SWM)拆分文件
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.DeleteImage">
+	<summary>
+ 从具有多个卷映像的 WIM 文件删除指定的卷映像
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.RemountImage">
+	<summary>
+ 恢复孤立的映像装载目录
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.CleanupImage">
+	<summary>
+ 删除与损坏的已安装 WIM 映像关联的资源
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.EnableFeature">
+	<summary>
+ 启用映像中的特定功能
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.DisableFeature">
+	<summary>
+ 禁用映像中的特定功能
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.AddPackage">
+	<summary>
+ 向映像中添加程序包
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.RemovePackage">
+	<summary>
+ 从映像中删除程序包
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.AddDriver">
+	<summary>
+ 向脱机映像中添加驱动程序包
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.RemoveDriver">
+	<summary>
+ 从脱机映像中删除驱动程序包
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.GetCurrentEdition">
+	<summary>
+ 显示当前映像的版本
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.SetEdition">
+	<summary>
+ 将映像升级到较高的版本
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.SetProductKey">
+	<summary>
+ 设置脱机映像的产品密钥
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.ApplyUnattend">
+	<summary>
+ 将无人参与文件应用于映像
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.CheckAppPatch">
+	<summary>
+ 显示有关 MSP 修补程序是否适用于安装的映像的信息
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.GetAppPatchInfo">
+	<summary>
+ 显示有关安装的 MSP 修补程序的信息
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.CustomCommand">
+	<summary>
+ 自定义命令
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.AddProvisionedAppxPackage">
+	<summary>
+ 添加Metro应用
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.RemoveProvisionedAppxPackage">
+	<summary>
+ 删除Metro应用
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.RunQueue">
+	<summary>
+ 执行队列
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.DismMissionFlags.PostMessage">
+	<summary>
+ 递交信息
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DismMissionFlags">
+	<summary>
+ 任务标识
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DismControlEventHandler">
+	<summary>
+ 表示将处理不包含事件数据的Dism控件事件的方法
+ </summary>
+	<param name="sender">Dism面板控件</param>
+	<param name="e">Dism面板控件事件数据对象</param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DismCommitFlags">
+	<summary>
+ 更新映像方式
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBoxEventArgs.#ctor">
+	<summary>
+ 创建已安装映像列表控件的事件数据对象
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBoxEventArgs.#ctor(System.Data.DataTable)">
+	<summary>
+ 创建已安装映像列表控件的事件数据对象
+ </summary>
+	<param name="Data">子项列表数据</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBoxEventArgs.#ctor(System.String)">
+	<summary>
+ 创建已安装映像列表控件的事件数据对象
+ </summary>
+	<param name="SelectedItem">选择项</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBoxEventArgs.#ctor(System.String,System.Data.DataTable)">
+	<summary>
+ 创建已安装映像列表控件的事件数据对象
+ </summary>
+	<param name="SelectedItem">选择项</param>
+	<param name="Data">子项列表数据</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBoxEventArgs.#ctor(System.String,System.Data.DataTable,DismGuiPE.WimInfoDetail)">
+	<summary>
+ 创建已安装映像列表控件的事件数据对象
+ </summary>
+	<param name="SelectedItem">选择项</param>
+	<param name="Data">子项列表数据</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.MountedWimInfoComboBoxEventArgs.#ctor(System.String,System.Data.DataTable,System.Object)">
+	<summary>
+ 创建已安装映像列表控件的事件数据对象
+ </summary>
+	<param name="SelectedItem">选择项</param>
+	<param name="Data">子项列表数据</param>
+	<param name="Tag">附加数据</param>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.MountedWimInfoComboBoxEventArgs.Data">
+	<summary>
+ 获取或者设置子列表数据
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.MountedWimInfoComboBoxEventArgs.Tag">
+	<summary>
+ 获取或者设置附加数据
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.MountedWimInfoComboBoxEventArgs.SelectedItem">
+	<summary>
+ 获取或者设置选择项
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.MountedWimInfoComboBoxEventArgs.ListSelectedItemDetail">
+	<summary>
+ 获取或者设置子项映像信息标识
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.MountedWimInfoComboBoxEventArgs">
+	<summary>
+ 表示已安装映像列表控件的事件数据对象
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WimInfoDetail.None">
+	<summary>
+ 无
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WimInfoDetail.WimInfo">
+	<summary>
+ .WIM 文件信息
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WimInfoDetail.MountedWimInfo">
+	<summary>
+ 已安装映像信息
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WimInfoDetail.Feature">
+	<summary>
+ 功能
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WimInfoDetail.Package">
+	<summary>
+ 程序包
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WimInfoDetail.Driver">
+	<summary>
+ 驱动
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WimInfoDetail.Edition">
+	<summary>
+ 版本
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WimInfoDetail.Application">
+	<summary>
+ 应用
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DismGuiPE.WimInfoDetail.MetroApps">
+	<summary>
+ Metro应用
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.WimInfoDetail">
+	<summary>
+ 映像信息标识
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.PanelImageOthers.UpdateImageInformationProc(DismGuiPE.PanelImageOthers.EditImageInfoObject)">
+	<summary>
+ 更新映像信息
+ </summary>
+	<param name="EIIObject"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.FixImage(System.String)">
+	<summary>
+ 修正映像装载路径
+ </summary>
+	<param name="ImageName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.ImageExists(System.String)">
+	<summary>
+ 判断映像是否存在
+ </summary>
+	<param name="ImageName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.FixPath(System.String)">
+	<summary>
+ 修正命令中使用的目录
+ </summary>
+	<param name="Path"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismShell.BuildMountedWimInfoTable">
+	<summary>
+ 创建装载目录列表
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismShell.BuildWimInfoTable">
+	<summary>
+ 创建映像索引列表
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismShell.BuildFeaturesTable">
+	<summary>
+ 创建功能列表
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismShell.BuildPackagesTable">
+	<summary>
+ 创建程序包列表
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismShell.BuildDriversTable">
+	<summary>
+ 创建驱动列表
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismShell.BuildAppsTable">
+	<summary>
+ 创建应用列表
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismShell.BuildTargetEditionsTable">
+	<summary>
+ 创建可用目标版本列表
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.UpdateDismExecutePath">
+	<summary>
+ 更新Dism组件路径
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismShell.DismPath">
+	<summary>
+ 获取Dism组件路径
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.DismExcute(System.String,System.Collections.Generic.List{System.String})">
+	<summary>
+ 执行Dism指令
+ </summary>
+	<param name="Arguments">参数</param>
+	<param name="Output">输出字符串集合</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.DataRecv(System.Object,System.Diagnostics.DataReceivedEventArgs)">
+	<summary>
+ 拦截Dism输出信息事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.GetWimInfo(System.String,System.Data.DataTable)">
+	<summary>
+ 获取 WIM 文件信息
+ </summary>
+	<param name="WimFile"></param>
+	<param name="dt"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.GetMountedWimInfo(System.Data.DataTable)">
+	<summary>
+ 获取已安装映像信息
+ </summary>
+	<param name="dt"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.GetFeatures(System.Data.DataTable,System.String)">
+	<summary>
+ 获取映像功能列表
+ </summary>
+	<param name="dt"></param>
+	<param name="Image"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.GetPackages(System.Data.DataTable,System.String)">
+	<summary>
+ 获取程序包列表
+ </summary>
+	<param name="dt"></param>
+	<param name="Image"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.GetDrivers(System.Data.DataTable,System.String)">
+	<summary>
+ 获取驱动列表
+ </summary>
+	<param name="dt"></param>
+	<param name="Image"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.GetApplications(System.Data.DataTable,System.String)">
+	<summary>
+ 获取应用列表
+ </summary>
+	<param name="dt"></param>
+	<param name="Image"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.GetCurrentEdition(System.String@,System.String)">
+	<summary>
+ 获取映像当前版本
+ </summary>
+	<param name="Edition"></param>
+	<param name="Image"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.GetTargetEditions(System.Data.DataTable,System.String)">
+	<summary>
+ 获取映像可用升级版本列表
+ </summary>
+	<param name="dt"></param>
+	<param name="Image"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateSetEditionArguments(System.String,System.String,System.String,System.Boolean,System.Boolean,System.String)">
+	<summary>
+ 创建设置版本参数
+ </summary>
+	<param name="Image">已安装映像</param>
+	<param name="Edition">版本</param>
+	<param name="ProductKey">产品密钥</param>
+	<param name="IsApplyProductKey">是否应用产品密钥</param>
+	<param name="AcceptEula">接受更高版本协议</param>
+	<param name="GetEulaPath">保存协议路径</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateSetProductKeyArguments(System.String,System.String)">
+	<summary>
+ 创建设置产品密钥参数
+ </summary>
+	<param name="Image">已安装映像</param>
+	<param name="ProductKey">产品密钥</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateMountImageArguments(System.String,System.String,System.UInt32,System.Boolean)">
+	<summary>
+ 创建挂载映像参数
+ </summary>
+	<param name="WimFile">.WIM 文件路径</param>
+	<param name="MountDir">挂载路径</param>
+	<param name="Index">映像索引</param>
+	<param name="IsReadOnly">是否以只读方式挂载</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateUnMountImageArguments(System.String,System.Boolean,System.Boolean)">
+	<summary>
+ 创建卸载映像参数
+ </summary>
+	<param name="MountDir">挂载目录</param>
+	<param name="CommitChanges">是否保存更改</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateApplyImageArgumnets(System.String,System.String,System.UInt32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ 创建应用映像参数
+ </summary>
+	<param name="WimFile">.WIM 文件</param>
+	<param name="ApplyDir">应用目录</param>
+	<param name="Index">映像索引</param>
+	<param name="CheckIntegrity">如果检测到 WIM 文件损坏，则使用 /CheckIntegrity 停止操作</param>
+	<param name="Verify">检查错误和文件重复</param>
+	<param name="NoRpFix">禁用重分析点标记修复</param>
+	<param name="ConfirmTrustedFile">验证受信任的桌面映像</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateCaptureImageArguments(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ 创建捕获映像到新的 .WIM 文件参数
+ </summary>
+	<param name="WimFile"></param>
+	<param name="CaptureDir"></param>
+	<param name="Name"></param>
+	<param name="Description"></param>
+	<param name="Compress"></param>
+	<param name="ConfigFile"></param>
+	<param name="Bootable"></param>
+	<param name="CheckIntegrity"></param>
+	<param name="Verify"></param>
+	<param name="NoRpFix"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateAppendImageArguments(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ 创建捕获映像追加到已有 .WIM 文件参数
+ </summary>
+	<param name="WimFile"></param>
+	<param name="CaptureDir"></param>
+	<param name="Name"></param>
+	<param name="Description"></param>
+	<param name="ConfigFile"></param>
+	<param name="Bootable"></param>
+	<param name="CheckIntegrity"></param>
+	<param name="Verify"></param>
+	<param name="NoRpFix"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateDeleteImageArguments(System.String,System.UInt32,System.Boolean)">
+	<summary>
+ 创建删除映像参数
+ </summary>
+	<param name="WimFile"></param>
+	<param name="Index"></param>
+	<param name="CheckIntegrity"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateExportImageArguments(System.String,System.UInt32,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ 创建导出映像参数
+ </summary>
+	<param name="SourecImageFile"></param>
+	<param name="SourceIndex"></param>
+	<param name="DestinationImageFile"></param>
+	<param name="DestinationName"></param>
+	<param name="Compress"></param>
+	<param name="Bootable"></param>
+	<param name="CheckIntegrity"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateSplitImageArguments(System.String,System.String,System.UInt32,System.Boolean)">
+	<summary>
+ 创建拆分 .WIM 文件参数
+ </summary>
+	<param name="WimFile"></param>
+	<param name="SWMFile"></param>
+	<param name="FileSize"></param>
+	<param name="CheckIntegrity"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateRemountImageArguments(System.String)">
+	<summary>
+ 创建重新挂载映像参数
+ </summary>
+	<param name="MountDir"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateCommitImageArguments(System.String,System.Boolean)">
+	<summary>
+ 创建保存对挂载的映像所做的更改
+ </summary>
+	<param name="MountDir"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateCleanupImageArguments">
+	<summary>
+ 创建清理损坏映像文件参数
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateEnableFeatureArguments(System.String,System.String,System.String[],System.Boolean,System.Boolean)">
+	<summary>
+ 创建启用映像功能参数
+ </summary>
+	<param name="Image"></param>
+	<param name="FeatureName"></param>
+	<param name="SourceList"></param>
+	<param name="All"></param>
+	<param name="LimitAccess"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateDisableFeatureArguments(System.String,System.String)">
+	<summary>
+ 创建禁用功能参数
+ </summary>
+	<param name="Image"></param>
+	<param name="FeatureName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateAddPackageArguments(System.String,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ 创建添加程序包参数
+ </summary>
+	<param name="Image"></param>
+	<param name="PackagePath"></param>
+	<param name="IgnoreCheck"></param>
+	<param name="PreventPending"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateRemovePackageArguments(System.String,System.String)">
+	<summary>
+ 创建删除程序包参数
+ </summary>
+	<param name="Image"></param>
+	<param name="PackageIdentity"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateAddDriverArguments(System.String,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ 创建添加驱动参数
+ </summary>
+	<param name="Image"></param>
+	<param name="Driver"></param>
+	<param name="Recurse"></param>
+	<param name="ForceUnsigned"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateRemoveDriverArguments(System.String,System.String)">
+	<summary>
+ 创建删除驱动参数
+ </summary>
+	<param name="Image"></param>
+	<param name="Driver"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismShell.CreateUnattendArgumenets(System.String,System.String)">
+	<summary>
+ 创建无人参与服务参数
+ </summary>
+	<param name="Image"></param>
+	<param name="UnattendFile"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="E:DismGuiPE.DismPanelBase.UpdateProgress">
+	<summary>
+ 通报更新进度
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="E:DismGuiPE.DismPanelBase.Execute">
+	<summary>
+ 执行指令事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismPanelBase.UpdateControlState(System.Boolean)">
+	<summary>
+ 更新控件状态
+ </summary>
+	<param name="IsEnabled"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismPanelBase.UpdateInfo(DismGuiPE.WimInfoDetail)">
+	<summary>
+ 更新信息
+ </summary>
+	<param name="Flags"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismPanelBase._UpdateControlState(System.Boolean)">
+	<summary>
+ 更新控件状态
+ </summary>
+	<param name="IsEnabled"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismPanelBase.LoadConfig">
+	<summary>
+ 加载配置
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismPanelBase.OnLoadConfig">
+	<summary>
+ 加载配置
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismPanelBase.OnUpdateInfo(DismGuiPE.WimInfoDetail)">
+	<summary>
+ 更新信息
+ </summary>
+	<param name="Flags">信息标识</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismPanelBase.OnExecute(DismGuiPE.DismControlEventArgs)">
+	<summary>
+ 执行指令
+ </summary>
+	<param name="e">Dism控件事件数据</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismPanelBase.OnExecute(DismGuiPE.IDismControl,DismGuiPE.DismControlEventArgs)">
+	<summary>
+ 执行指令
+ </summary>
+	<param name="sender">触发事件的面板控件</param>
+	<param name="e">Dism控件事件数据</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismPanelBase.OnUpdateProgress(System.Int64,System.Int64)">
+	<summary>
+ 通报处理进度
+ </summary>
+	<param name="Current">已完成数量</param>
+	<param name="Total">总数</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismPanelBase.OnUpdateProgress(System.Boolean)">
+	<summary>
+ 通报处理进度
+ </summary>
+	<param name="IsCompleted">控件处理时间是否处完成</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DismPanelBase.OnUpdateProgress(DismGuiPE.UpdateProgressEventArgs)">
+	<summary>
+ 通报处理进度
+ </summary>
+	<param name="e">通报处理进度事件数据对象</param>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismPanelBase.Name">
+	<summary>
+ 获取或者设置控件的名称
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismPanelBase.Dock">
+	<summary>
+ 获取或者设置控件停靠的位置和方式
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.DismPanelBase.Title">
+	<summary>
+ 获取或者设置提示对话框的标题
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DismPanelBase">
+	<summary>
+ Dism面板控件基础类。请务必在继承类中重写OnLoadConfig和OnUpdateInfo事件！
+ </summary>
+	<remarks></remarks>
+</member><member name="E:DismGuiPE.WimInfoComboBox.SelectedIndexChanged">
+	<summary>
+ 映像索引改变事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimInfoComboBox.ToolTipTitle">
+	<summary>
+ 获取或者设置控件提示标题
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimInfoComboBox.ImageNameControl">
+	<summary>
+ 获取或者设置映像名称控件
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimInfoComboBox.ImageDescriptionControl">
+	<summary>
+ 获取或者设置映像描述控件
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimInfoComboBox.MaxDropDownItems">
+	<summary>
+ 获取或者设置下拉菜单显示最大项数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimInfoComboBox.ItemHeightOffset">
+	<summary>
+ 获取或者设置项高偏移
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimInfoComboBox.WimFile">
+	<summary>
+ 获取或者设置 .WIM 文件路径
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimInfoComboBox.Text">
+	<summary>
+ 获取或者设置映像索引
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimInfoComboBox.DropDownWidth">
+	<summary>
+ 获取或者设置下拉菜单的宽度（以像素为单位）
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox.Equals(DismGuiPE.WimInfoComboBox)">
+	<summary>
+ 重载 Equals 函数
+ </summary>
+	<param name="Value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox.UpdateControlState(System.Boolean)">
+	<summary>
+ 更新控件可用状态
+ </summary>
+	<param name="IsEnabled"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox._UpdateControlState(System.Boolean)">
+	<summary>
+ 更新控件可用状态
+ </summary>
+	<param name="IsEnabled"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox.UpdateWimInfo">
+	<summary>
+ 更新映像文件信息
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox.UpdateWimInfo(System.String)">
+	<summary>
+ 更新映像文件信息
+ </summary>
+	<param name="WimFile">.WIM 文件路径</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox.UpdateWimInfoProc">
+	<summary>
+ 更新映像文件信息处理过程
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox.ShowWimInfoProc(System.Data.DataTable)">
+	<summary>
+ 显示映像文件信息
+ </summary>
+	<param name="dt"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox.WimInfoComboBox_Load(System.Object,System.EventArgs)">
+	<summary>
+ 初始化控件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox.WimInfoComboBox_Resize(System.Object,System.EventArgs)">
+	<summary>
+ 调整控件大小
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox.Parent_Resize(System.Object,System.EventArgs)">
+	<summary>
+ 父容器大小调整事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox.MCB_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ 映像索引变更事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox._SelectedIndexChangedProc(System.Object,System.EventArgs)">
+	<summary>
+ 映像索引变更事件
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox.BtnRefresh_Click(System.Object,System.EventArgs)">
+	<summary>
+ 刷新映像文件信息
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox.DrawItemProc(System.Object,System.Windows.Forms.DrawItemEventArgs)">
+	<summary>
+ 绘制映像文件信息项
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBox.GetSizeDescritpion(System.UInt64)">
+	<summary>
+ 获取映像大小描述
+ </summary>
+	<param name="Value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.WimInfoComboBox">
+	<summary>
+ .WIM 文件信息控件
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimInfoComboBoxEventArgs.Index">
+	<summary>
+ 获取或者设置映像索引
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimInfoComboBoxEventArgs.Name">
+	<summary>
+ 获取或者设置映像名称
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DismGuiPE.WimInfoComboBoxEventArgs.Description">
+	<summary>
+ 获取或者设置映像描述
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBoxEventArgs.#ctor">
+	<summary>
+ 创建映像文件信息事件数据对象
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBoxEventArgs.#ctor(System.String)">
+	<summary>
+ 创建映像文件信息事件数据对象
+ </summary>
+	<param name="Name">映像名称</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBoxEventArgs.#ctor(System.String,System.String)">
+	<summary>
+ 创建映像文件信息事件数据对象
+ </summary>
+	<param name="Name">映像名称</param>
+	<param name="Description">映像描述</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.WimInfoComboBoxEventArgs.#ctor(System.String,System.String,System.Int32)">
+	<summary>
+ 创建映像文件信息事件数据对象
+ </summary>
+	<param name="Name">映像名称</param>
+	<param name="Description">映像描述</param>
+	<param name="Index">映像索引</param>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.WimInfoComboBoxEventArgs">
+	<summary>
+ 表示映像文件信息事件数据
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DrawMethod.DrawText(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Drawing.Color,System.Drawing.Rectangle,System.Drawing.ContentAlignment)">
+	<summary>
+ 绘制文本
+ </summary>
+	<param name="e">GDI+绘图图面</param>
+	<param name="Text">文本</param>
+	<param name="Font">字体</param>
+	<param name="Color">颜色</param>
+	<param name="Rect">绘制区域</param>
+	<param name="TextAlignment">对齐方式</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DrawMethod.DrawText(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Drawing.Color,System.Drawing.Rectangle,System.Drawing.ContentAlignment,System.Drawing.StringFormatFlags)">
+	<summary>
+ 绘制文本
+ </summary>
+	<param name="e">GDI+绘图图面</param>
+	<param name="Text">文本</param>
+	<param name="Font">字体</param>
+	<param name="Color">颜色</param>
+	<param name="Rect">绘制区域</param>
+	<param name="TextAlignment">对齐方式</param>
+	<param name="FormatFlags">文本字符串的显示和布局信息</param>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DrawMethod.GetRoundPath(System.Drawing.Rectangle,System.Int32)">
+	<summary>
+ 创建一个带圆角的矩形区域
+ </summary>
+	<param name="Rect">矩形区域</param>
+	<param name="Radius">圆角半径</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DismGuiPE.DrawMethod.GetStringFormat(System.Drawing.ContentAlignment)">
+	<summary>
+ 获取文本字符串对齐方式
+ </summary>
+	<param name="TextAlignment">对齐方式</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DismGuiPE.DrawMethod">
+	<summary>
+ 封装一些常用的GDI绘图函数
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

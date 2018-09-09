@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <CleanCollection4>
+    <Item Name="HelloWorld" Level="2">
+      <Discription>Dism++插件开发教程演示插件，显示一个Hello World对话框</Discription>
+      <Group>TestPlugin</Group>
+      <ScanCollection>  
+        <Scan Type="Custom">
+          <Activate>
+            <Custom ProcName="HelloWorldCleanup"/>
+          </Activate>
+        </Scan>
+      </ScanCollection>
+    </Item>
+  </CleanCollection4>
+</Data>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Plugin>
+    <Name>TestPlugin</Name>
+    <Version>1.0.0.0</Version>
+  </Plugin>
+  <Languages>
+    <zh>
+      <FriendlyName>TestPlugin</FriendlyName>
+      <Decription>Dism++插件教程附带Demo</Decription>
+    </zh>
+    <en>
+      <FriendlyName>TestPlugin</FriendlyName>
+      <Decription>Demo for Dism++ Plugin Develop Guide</Decription>
+    </en>
+  </Languages>
+</Data>
